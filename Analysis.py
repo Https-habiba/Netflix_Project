@@ -1,3 +1,10 @@
-import pandas as pd
-df=pd.read_csv('data/netflix_titles.csv')
+import pandas as pd 
+df = pd.read_csv('Netflix_titles.csv')
 print(df.head())
+print(df.info())
+print(df.describe())
+print(df.columns)
+print(df.shape)
+print(df.isnull().sum())
+print(df.dtypes)
+print(df['country'].value_counts())
